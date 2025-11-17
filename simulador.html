@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Créditos - CreditSmart</title>
+    <link rel="stylesheet" href="./css/style.css">
+    
+</head>
+<body>
+
+<!-- NAVEGACIÓN -->
+<nav class="navbar">
+    <div class="container">
+        <h1 class="logo">💳 CreditSmart</h1>
+
+        <!-- Botón del menú móvil -->
+        <div class="menu-toggle" id="menu-toggle">☰</div>
+
+        <ul class="menu" id="menu">
+            <li><a href="inicio.html">🔼 Inicio</a></li>
+            <li><a href="simulador.html">🔎 Buscar</a></li>
+            <li><a href="solicitar.html">▶ Solicitar crédito</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+<!-- BANNER -->
+<header class="hero">
+    <div class="container">
+        <h2>Simulador de Créditos</h2>
+        <p>Encuentra fácilmente el crédito que se ajusta a tus necesidades</p>
+    </div>
+</header>
+
+<!-- SECCIÓN DE FILTROS -->
+<main class="container">
+    <section class="credits-section">
+        <h3>Buscar Créditos</h3>
+
+        <div class="filters" style="margin-bottom: 2rem; text-align:center;">
+            <input type="text" placeholder="🔍 Buscar por nombre del producto" style="padding:0.6rem; width:60%; border-radius:8px; border:1px solid #ccc;">
+            <select style="padding:0.6rem; border-radius:8px; border:1px solid #ccc; margin-left:0.5rem;">
+                <option>Filtrar por monto</option>
+                <option>$1M - $10M</option>
+                <option>$10M - $50M</option>
+                <option>$50M - $100M</option>
+                <option>Más de $100M</option>
+            </select>
+            <button class="btn-primary" style="width:auto; margin-left:0.5rem;">Buscar</button>
+        </div>
+
+        <!-- Resultados simulados (cards estáticas) -->
+        <div class="credits-grid">
+            <div class="credit-card">
+                <div class="card-header">
+                    <h4>💰 Crédito Personal</h4>
+                </div>
+                <p>Financia tus proyectos personales con tasas desde el 1.8% mensual.</p>
+                <div class="details">
+                    <div class="detail-item"><span class="label">Monto:</span><span class="value">$1M - $30M</span></div>
+                    <div class="detail-item"><span class="label">Plazo:</span><span class="value">Hasta 60 meses</span></div>
+                </div>
+                <button class="btn-primary">Ver detalles</button>
+            </div>
+
+            <div class="credit-card">
+                <div class="card-header">
+                    <h4>🚗 Crédito Vehículo</h4>
+                </div>
+                <p>Compra el carro de tus sueños con una tasa preferencial.</p>
+                <div class="details">
+                    <div class="detail-item"><span class="label">Monto:</span><span class="value">$5M - $100M</span></div>
+                    <div class="detail-item"><span class="label">Plazo:</span><span class="value">Hasta 72 meses</span></div>
+                </div>
+                <button class="btn-primary">Ver detalles</button>
+            </div>
+        </div>
+    </section>
+</main>
+<script src="./script/menu.js"></script>
+<footer class="footer">
+    <div class="container footer-content">
+        <p>© 2025 CreditSmart. Todos los derechos reservados.</p>
+        <ul class="footer-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="simulador.html">Buscar crédito</a></li>
+            <li><a href="solicitar.html">Solicitar crédito</a></li>
+        </ul>
+    </div>
+</footer>
+</body>
+</html>

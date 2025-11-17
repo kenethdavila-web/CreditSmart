@@ -1,0 +1,274 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'segoe IUA', Arial,sans-serif;
+    background-color:#f5f7fa;
+    color: #333;   
+    line-height:1.5;
+    
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    
+}
+
+/* NAVEGACIÓN */
+.navbar {
+    background-color: #070a14;
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    margin-bottom: 2rem;
+    position: sticky;      /* hace que el menú quede fijo */
+    top: 0;                /* lo fija al borde superior */
+    z-index: 1000;         /* asegura que quede por encima de otros elementos */
+}
+
+.navbar .container {
+    display: flex;                  /* coloca logo y menú en una misma línea */
+    justify-content: space-between; /* logo a la izquierda, menú a la derecha */
+    align-items: center;            /* centra verticalmente ambos elementos */
+}
+
+
+.logo {
+    color: #f3b51a;
+    font-size: 1.5rem;
+         
+}
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+    text-transform: uppercase;
+   
+}
+.menu a:hover, .menu a.active {
+    color: #f3b51a;
+   
+}
+
+
+/* BANNER PRINCIPAL - HERO */
+.hero {
+    background: linear-gradient(135deg, #050a18 50%, #e5e7eb 100%);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 3rem 0;
+}
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 0.95;
+}
+
+.credits-section {
+    padding: 3rem 0;
+}
+.credits-section h3 {
+   font-size: 2rem;
+   color: #fcb912;
+   margin-bottom: 2rem;
+   text-align: center;
+
+}
+.credits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(365px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.credit-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 2px rgba(3, 3, 3, 0.1);
+    padding: 1.5rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.credit-card:hover {
+    transform: translateY(-px);
+    box-shadow: 0 4px 15 rgba(30,58,138,0.2);
+}
+.card-header {
+    display: flex;   
+    align-items: center;
+    margin-bottom: 1rem;   
+    gap: 0.5rem;
+}
+.icon {
+    font-size: 2rem;
+}
+.card-header h4 {
+    font-size: 1.3rem;    
+    color: #f5b513;
+    
+}
+.details {
+    margin-bottom: 1.5rem;
+}
+.detail-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid  #d9dce0;
+}
+.label {
+    font-size: 0.9rem;
+    color: #161212;
+}
+.value {
+    font-weight: 600;
+    color: #fbbf24;
+}
+.apply-button {
+    display: inline-block;
+    background-color: #1e3a8a;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+.apply-button:hover {
+    background-color: #82868d;
+}
+.highlight {
+    color: rgb(31, 29, 29);
+    font-size: 1.1rem;
+}
+.btn-primary {
+    background-color: #f3c245;;
+    color: rgb(255, 252, 252);
+    padding: 0.8rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;  
+    width: 100%;  
+    font-weight: 600;
+    transition: all 0.3s;
+}
+.btn-primary:hover {
+    background-color: #0d0d0e;
+}
+
+
+
+/* === MENÚ RESPONSIVE === */
+
+/* Botón hamburguesa oculto por defecto */
+.menu-toggle {
+    display: none;
+    font-size: 1.8rem;
+    color: #f3b51a;
+    cursor: pointer;
+}
+
+/* --- Ajustes para pantallas pequeñas --- */
+/* === MENÚ RESPONSIVE CON ANIMACIÓN === */
+.menu-toggle {
+    display: none;
+    font-size: 1.8rem;
+    color: #f3b51a;
+    cursor: pointer;
+}
+
+/* --- Ajustes para pantallas pequeñas --- */
+@media (max-width: 768px) {
+    .navbar .container {
+        flex-wrap: wrap;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: #070a14;
+        margin-top: 1rem;
+        text-align: center;
+        padding: 0;
+        border-top: 1px solid #222;
+        max-height: 0;               /* Menú oculto */
+        overflow: hidden;            /* Esconde contenido cuando está cerrado */
+        transition: max-height 0.4s ease-in-out; /* Animación suave */
+    }
+
+    .menu li {
+        margin: 0.8rem 0;
+    }
+
+    .menu a {
+        font-size: 1rem;
+        display: block;
+        padding: 0.6rem 0;
+    }
+
+    .menu-toggle {
+        display: block; /* Visible solo en móviles */
+    }
+
+    .menu.active {
+        max-height: 500px; /* Altura máxima al abrir (ajusta si hay más elementos) */
+        padding: 1rem 0;
+    }
+}
+/* FOOTER */
+.footer {
+    background-color: #070a14;
+    color: white;
+    padding: 1.5rem 0;
+    margin-top: 3rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.footer-links a {
+    color: #f3b51a;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+/* Responsive Footer */
+@media (min-width: 768px) {
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+

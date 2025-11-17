@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitar Crédito - CreditSmart</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<!-- NAVEGACIÓN -->
+<nav class="navbar">
+    <div class="container">
+        <h1 class="logo">💳 CreditSmart</h1>
+
+        <!-- Botón del menú móvil -->
+        <div class="menu-toggle" id="menu-toggle">☰</div>
+
+        <ul class="menu" id="menu">
+            <li><a href="inicio.html">🔼 Inicio</a></li>
+            <li><a href="simulador.html">🔎 Buscar</a></li>
+            <li><a href="solicitar.html">▶ Solicitar crédito</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- BANNER -->
+<header class="hero">
+    <div class="container">
+        <h2>Formulario de Solicitud de Crédito</h2>
+        <p>Completa tus datos para iniciar tu solicitud</p>
+    </div>
+</header>
+
+<!-- FORMULARIO -->
+<main class="container">
+    <section class="credits-section">
+        <h3>Datos del Solicitante</h3>
+
+        <form class="credit-form" style="background:white; padding:2rem; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+
+            <!-- Datos Personales -->
+            <h4 style="color:#f3b51a;">Datos Personales</h4>
+            <label>Nombre completo</label>
+            <input type="text" placeholder="Tu nombre completo" required>
+
+            <label>Cédula</label>
+            <input type="number" placeholder="Ej: 1234567890" required>
+
+            <label>Email</label>
+            <input type="email" placeholder="correo@ejemplo.com" required>
+
+            <label>Teléfono</label>
+            <input type="tel" placeholder="Ej: 3001234567" required>
+
+            <!-- Datos del Crédito -->
+            <h4 style="color:#f3b51a; margin-top:1.5rem;">Datos del Crédito</h4>
+            <label>Tipo de crédito</label>
+            <select required>
+                <option>Crédito Personal</option>
+                <option>Crédito Vehículo</option>
+                <option>Crédito Hipotecario</option>
+                <option>Crédito Educativo</option>
+                <option>Crédito Empresarial</option>
+            </select>
+
+            <label>Monto solicitado</label>
+            <input type="number" placeholder="Ej: 15000000" required>
+
+            <label>Plazo en meses</label>
+            <select required>
+                <option>12</option>
+                <option>24</option>
+                <option>36</option>
+                <option>48</option>
+                <option>60</option>
+            </select>
+
+            <label>Destino del crédito</label>
+            <textarea rows="4" placeholder="Describe el destino del crédito"></textarea>
+
+            <!-- Datos Laborales -->
+            <h4 style="color:#f3b51a; margin-top:1.5rem;">Datos Laborales</h4>
+            <label>Empresa donde trabaja</label>
+            <input type="text" placeholder="Nombre de la empresa">
+
+            <label>Cargo</label>
+            <input type="text" placeholder="Ej: Analista financiero">
+
+            <label>Ingresos mensuales</label>
+            <input type="number" placeholder="Ej: 3000000">
+
+            <div style="margin-top:1.5rem; display:flex; gap:1rem;">
+                <button type="submit" class="btn-primary">Enviar Solicitud</button>
+                <button type="reset" class="btn-primary">Limpiar Formulario</button>
+            </div>
+        </form>
+    </section>
+</main>
+<script src="./script/menu.js"></script>
+<footer class="footer">
+    <div class="container footer-content">
+        <p>© 2025 CreditSmart. Todos los derechos reservados.</p>
+        <ul class="footer-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="simulador.html">Buscar crédito</a></li>
+            <li><a href="solicitar.html">Solicitar crédito</a></li>
+        </ul>
+    </div>
+</footer>
+</body>
+</html>
