@@ -2,7 +2,7 @@
 
 ## 👨‍💻 Desarrollado por:
 **Kéneth Anderson Dávila Cuesta**
-
+**Isai Manuel Narvaez Redondo**
 ---
 
 ## 🧠 Descripción del Proyecto
@@ -23,6 +23,8 @@ El proyecto aplica buenas prácticas de **HTML5 semántico**, **CSS3 profesional
 │
 └── README.md → Documentación del proyecto
 
-![Página principal](./screenshots/inicio.png)
-![Simulador](./screenshots/simulador.png)
-![Formulario de solicitud](./screenshots/solicitar.png)
+![Página principal](inicio.png)
+
+![Simulador](simulador.png)
+
+![Formulario de solicitud](solicitar.png)
