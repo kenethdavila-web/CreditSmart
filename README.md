@@ -1,7 +1,8 @@
 # 💳 CreditSmart - Sistema de Gestión de Créditos
 
 ## 👨‍💻 Desarrollado por:
-**Kéneth Anderson Dávila Cuesta**
+**Kéneth Anderson Dávila Cuesta** 
+ 
 **Isai Manuel Narvaez Redondo**
 ---
 
