@@ -28,3 +28,11 @@ El proyecto aplica buenas prácticas de **HTML5 semántico**, **CSS3 profesional
 ![Simulador](simulador.png)
 
 ![Formulario de solicitud](solicitar.png)
+
+ **Instrucciones para Ejecutar el Proyecto**
+1. Descarga o clona este repositorio.  
+2. Abre el archivo **index.html** en tu navegador web, dandole doble click sobre el.  
+3. Usa la barra de navegación para acceder a las otras páginas:  
+    Simulador  
+    Solicitar crédito  
+
