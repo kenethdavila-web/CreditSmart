@@ -2,7 +2,7 @@
 
 ## 👨‍💻 Desarrollado por:
 
-**Keneth Anderson Dávila Cuesta** 
+**Keneth Anderson Dávila Cuesta** y 
 **Isai Manuel Narvaez Redondo**
 ---
 
